@@ -31,7 +31,7 @@ export function Button(props: ButtonProps) {
   const className = `inline-flex items-center justify-center rounded-full bg-neutral-900 text-white shadow-sm transition hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900 ${sizes} ${props.className ?? ""}`;
 
   if ("href" in props && props.href) {
-    const { href, children, size: _s, className: _c, ...rest } =
+    const { href, children, size: _size, className: _className, ...rest } =
       props as ButtonAsAnchor;
     return (
       <a href={href} className={className} {...rest}>
@@ -42,8 +42,8 @@ export function Button(props: ButtonProps) {
 
   const {
     children,
-    size: _s,
-    className: _c,
+    size: _size,
+    className: _className,
     type = "button",
     ...rest
   } = props as ButtonAsButton;

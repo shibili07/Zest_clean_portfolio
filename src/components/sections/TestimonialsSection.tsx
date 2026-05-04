@@ -60,7 +60,7 @@ export function TestimonialsSection() {
     <section id="testimonials" className="relative overflow-hidden bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Top Badge */}
-        <Reveal align="center">
+        <Reveal>
           <div className="flex justify-center">
             <div className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-1.5 shadow-xl">
               <div className="flex h-5 w-5 items-center justify-center rounded-full bg-violet-600">
@@ -76,7 +76,7 @@ export function TestimonialsSection() {
         </Reveal>
 
         {/* Title */}
-        <Reveal delay={2} align="center">
+        <Reveal delay={2}>
           <h2 className="mt-8 text-center text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl">
             Words of praise from others <br className="hidden sm:block" />
             about our presence.
@@ -108,7 +108,14 @@ export function TestimonialsSection() {
   );
 }
 
-function TestimonialCard({ quote, name, role, avatar }: any) {
+interface TestimonialProps {
+  quote: string;
+  name: string;
+  role: string;
+  avatar: string;
+}
+
+function TestimonialCard({ quote, name, role, avatar }: TestimonialProps) {
   return (
     <Reveal animation="scale" className="w-[380px] flex-shrink-0">
       <div className="rounded-[2rem] bg-neutral-50 p-8 transition-colors hover:bg-neutral-100 h-full">

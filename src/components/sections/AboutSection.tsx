@@ -69,7 +69,7 @@ export function AboutSection() {
                 What started as a passion project in a small garage is now a brand trusted by thousands.
               </p>
               <p>
-                Today, Zest Clean is more than just a shampoo; it's a commitment to automotive excellence. 
+                Today, Zest Clean is more than just a shampoo; it&apos;s a commitment to automotive excellence. 
                 We combine cutting-edge chemistry with a deep love for cars to bring you products 
                 that make every wash feel like a showroom reveal.
               </p>
